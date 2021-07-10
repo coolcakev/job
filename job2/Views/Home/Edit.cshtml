@@ -1,0 +1,24 @@
+﻿@model job2.Models.announcement
+@{
+    ViewBag.Title = "Редагування  пользователя";
+}
+
+<form asp-action="edit" asp-controller="home">
+    <div class="form-group">
+        <label asp-for="Title" class="control-label">Title</label>
+        <input type="text" asp-for="Title" value="@Model.Title" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Description" class="control-label">Description</label>
+        <input type="text" asp-for="Description" value="@Model.Description" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Date_Added" class="control-label">Date_Added</label>
+        <input type="date" asp-for="Date_Added" value="@Model.Date_Added" class="form-control" />
+    </div>
+    <div class="form-group">
+        <input type="submit" value="змінити" class="btn btn-default" />
+    </div>
+</form>
+
+
