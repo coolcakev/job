@@ -1,5 +1,4 @@
-﻿<link rel="stylesheet" href="~/css/site.css" />
-
+﻿
 @model List<List<announcement>>
 @{
     ViewBag.Title = "Все annoncement";
@@ -12,6 +11,8 @@
         if (Model[i].Count > 1)
         {
 
+    <div class="vital">
+        @{
             <p> @(cou++) спроба </p>
 
             for (int j = 0; j < Model[i].Count; j++)
@@ -19,17 +20,25 @@
                 <p> @Model[i][j].Title</p>
                 <p> @Model[i][j].Description</p>
                 <p> @Model[i][j].Date_Added</p>
-               
+                if (j!= Model[i].Count-1)
+                {
+    <div class="myline">
+
+    </div>
+                }
             }
-
-
-
-
-
         }
 
 
+    </div>
 
-    }
+
+
+
+}
+
+
+
+}
 
 }

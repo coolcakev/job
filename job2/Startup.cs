@@ -26,7 +26,7 @@ namespace job2
             
               services.AddDbContext<ApplicationContext>(options =>
                 options.UseSqlServer(connection));
-            
+        
             services.AddControllersWithViews();
         }
 
