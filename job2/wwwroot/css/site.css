@@ -69,7 +69,15 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
-
-.body .vital {
-    color: blue;
+.vital {
+min-height:10px;
+min-width:10px;
+border: 5px dashed red;
+margin-bottom:10px;
+}
+.myline {
+    height: 5px;
+    width: 100%;
+    background-color: red;
+    margin-bottom: 5px;
 }
